@@ -23,7 +23,7 @@ namespace Xamarin.DevOps.App
         protected override void OnStart()
         {
             // Handle when your app starts
-            MobileCenter.Start("android=9c5a4480-99ef-4944-861f-7bdae76174d3", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("android=0e8edce0-014d-4807-9aa2-a6b1128fbc03;", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
