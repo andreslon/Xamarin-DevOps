@@ -17,7 +17,7 @@ namespace Xamarin.DevOps.App
         {
             InitializeComponent();
 
-            MainPage = new Xdsadsaamarin.DevOps.App.MainPage();
+            MainPage = new Xamarin.DevOps.App.MainPage();
         }
 
         protected override void OnStart()
