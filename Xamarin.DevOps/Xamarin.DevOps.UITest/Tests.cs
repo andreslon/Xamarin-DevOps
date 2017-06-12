@@ -6,13 +6,18 @@ using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
 namespace Xamarin.DevOps.UITest
-{
+{ 
     [TestFixture(Platform.Android)]
     [TestFixture(Platform.iOS)]
     public class Tests
     {
         IApp app;
         Platform platform;
+
+        static readonly Func<AppQuery, AppQuery> InitialMessage = c => c.Marked("MyLabel").Text("Hello, Xamarin.Forms!");
+        static readonly Func<AppQuery, AppQuery> Button = c => c.Marked("MyButton");
+        static readonly Func<AppQuery, AppQuery> DoneMessage = c => c.Marked("MyLabel").Text("Was clicked");
+
 
         public Tests(Platform platform)
         {
@@ -28,7 +33,17 @@ namespace Xamarin.DevOps.UITest
         [Test]
         public void AppLaunches()
         {
-            app.Screenshot("First screen.");
+            app.Repl();
+            // Arrange - Nothing to do because the queries have already been initialized.
+            AppResult[] result = app.Query(InitialMessage);
+            Assert.IsTrue(result.Any(), "The initial message string isn't correct - maybe the app wasn't re-started?");
+
+            // Act
+            app.Tap(Button);
+
+            // Assert
+            result = app.Query(DoneMessage);
+            Assert.IsTrue(result.Any(), "The 'clicked' message is not being displayed.");
         }
     }
 }

@@ -4,10 +4,6 @@
              xmlns:local="clr-namespace:Xamarin.DevOps.App"
              x:Class="Xamarin.DevOps.App.MainPage">
 
-    <StackLayout>
-        <Button x:Name="b" AutomationId="MyButton" Text="Click me"/>
-        <Label x:Name="l" AutomationId="MyLabel" Text="Hello, Xamarin.Forms!" />
-
-    </StackLayout>
+   
 
 </ContentPage>
