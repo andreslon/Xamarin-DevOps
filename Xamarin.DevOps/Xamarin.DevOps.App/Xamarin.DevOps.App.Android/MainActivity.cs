@@ -15,7 +15,7 @@ namespace Xamarin.DevOps.App.Droid
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbadsarResource = Resourdsace.Layout.Toolbar;
+            ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
 

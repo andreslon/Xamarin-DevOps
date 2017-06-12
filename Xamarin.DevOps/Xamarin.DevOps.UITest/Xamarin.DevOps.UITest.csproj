@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03B287B2-F0B3-45D1-884E-13BE271C5165}</ProjectGuid>
+    <ProjectGuid>{5EB80516-EBCF-4788-B6AC-F081654586B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Xamarin.DevOps.UITest</RootNamespace>
     <AssemblyName>Xamarin.DevOps.UITest</AssemblyName>
