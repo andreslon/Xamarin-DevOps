@@ -12,7 +12,7 @@ using Microsoft.Azure.Mobile.Crashes;
 namespace Xamarin.DevOps.App
 {
     public partial class App : Application
-    {
+    { 
         public App()
         {
             InitializeComponent();
